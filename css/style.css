@@ -1,0 +1,80 @@
+/*Logo dO Site*/
+
+
+.logo {
+    width: 150px;
+}
+
+
+.div-logo{
+    width: 150px;
+}
+
+/*Links de Navegação no Cabeçalho do Site*/
+.nav {
+    list-style-type: none;
+    padding: 30px;
+    text-align: center;
+    width: 1232px;
+}
+
+.nav li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.nav a{
+    text-decoration: none;
+}
+
+/*Foto Sobre Nós*/
+.tiago {
+    width: 300px;
+}
+
+.imagem{
+    width: 50%;
+}
+
+/*Imagens dos Produtos*/
+
+.produtos{
+    border: 2px solid black;
+    width: 300px;
+}
+
+.card-img-top{
+    width: 200px;
+    height: 300px;
+    
+}
+
+.rodape-text{
+    color: black;
+}
+
+.redes-sociais{
+    height: 30px;
+    width: 30px;
+}
+
+.pagamento{
+    height: 30px;
+    width: 30px;
+}
+
+.footer-links{
+    color: black;
+    text-decoration: none;
+}
+
+.car{
+   
+    height: 750px;
+    width: 100%;
+}
+
+.services{
+    width: 20%;
+}
