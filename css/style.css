@@ -1,6 +1,4 @@
 /*Logo dO Site*/
-
-
 .logo {
     width: 150px;
 }
@@ -26,15 +24,47 @@
 
 .nav a{
     text-decoration: none;
+
 }
 
-/*Foto Sobre Nós*/
-.tiago {
-    width: 300px;
-}
+.navbar-nav a {
+    border-bottom: 3px solid rgba(0, 0, 108,0)  !important; 
+    
+  }
+
+.navbar-nav a:hover {
+    color: rgb(0, 0, 108);
+    /*text-decoration: underline rgb(0, 0, 108) ;*/
+    border-bottom: 3px solid rgb(0, 0, 108)  !important; 
+    
+  }
+
+  .navbar-nav{
+    text-align: center;
+  }
+
+.nav-link{
+    font-size: 25px;
+  }
+
+  .nav-item{
+    padding-right: 50px;
+  }
+
 
 .imagem{
     width: 50%;
+}
+
+.container-back{
+    /*background-image: url("/img/loja2.jpg");*/
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.d-block{
+    max-height:700px;
+    object-fit: cover;
 }
 
 /*Imagens dos Produtos*/
@@ -43,6 +73,18 @@
     border: 2px solid black;
     width: 300px;
 }
+
+.imgs-1{
+    width: 30%;
+}
+
+.coluna:hover{
+    opacity: 50%;
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
 
 .card-img-top{
     width: 200px;
@@ -77,4 +119,53 @@
 
 .services{
     width: 20%;
+}
+
+#cont{
+    
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 70px;
+        
+      }
+
+#nome{
+    border: 0.5px solid lightgrey;
+    height: 40px;
+    width:60%;
+}
+
+#nome:focus{
+    border-color: lightblue;
+}
+
+#assunto{
+    border: 0.5px solid lightgrey;
+    height: 40px;
+    width:60%;
+}
+
+#assunto:focus{
+    border-color:lightblue;
+}
+
+#email{
+    border: 0.5px solid lightgrey;
+    height: 40px;
+    width:60%;
+}
+
+#email:focus{
+    border-color: lightblue;
+}
+
+.mensagem{
+    border: 0.5px solid lightgrey;
+}
+.hr-width{
+    width: 60px;
+}
+
+.btn-primary:hover{
+    opacity: 75%;
 }
