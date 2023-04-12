@@ -1,3 +1,6 @@
+body{
+  background-color: wheat;
+}
 /*Logo dO Site*/
 .logo {
     width: 150px;
@@ -89,6 +92,11 @@
 
 a{
   text-decoration: none;  
+}
+
+.navbar{
+  /*background-color:rgb(249, 189, 104);*/
+  background-color: rgb(235, 170, 100);
 }
 
 .navbar-nav a {
@@ -188,12 +196,14 @@ a{
 
 .card{
   border: 0;
+  background-color: wheat;
   
 }
 
 .card-img-top{
     width: 200px;
-    height: 300px;  
+    height: 300px;
+      
 }
 
 .card-img-top:hover{
