@@ -113,7 +113,7 @@ a{
   }
 
 .nav-link{
-    font-size: 25px;
+    font-size: 20px;
     text-decoration: none;  
   }
 
@@ -173,8 +173,11 @@ a{
 }
 
 
-#sobre_imagem{
-  height: 500px;
+
+#sobre-imagem{
+  border-radius: 10px;
+  height: 322px;
+  width: 322px;
 }
 
 /*Imagens dos Produtos*/
