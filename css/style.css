@@ -1,7 +1,7 @@
 body{
-  background-color: wheat;
+  background-color: rgb(252, 239, 216);
 }
-/*Logo dO Site*/
+/*Logo do Site*/
 .logo {
     width: 150px;
 }
@@ -94,10 +94,10 @@ a{
   text-decoration: none;  
 }
 
-.navbar{
-  /*background-color:rgb(249, 189, 104);*/
+/* .navbar{
+  background-color:rgb(249, 189, 104);
   background-color: rgb(235, 170, 100);
-}
+} */
 
 .navbar-nav a {
     border-bottom: 3px solid rgba(0, 0, 108,0)  !important; 
@@ -150,18 +150,31 @@ a{
     height: 30%;
 }
 
+.carousel-inner{
+  height: 400px;
+}
+
+.carousel-item{
+  object-fit: scale-down;
+}
+
+.slide{
+ position: relative;
+}
+
 .container-back{
     margin-left: 15%;
     margin-right: 15%;
 }
 
-.d-block{
-    max-height:700px;
-    object-fit: fill;
-}
 
 .botao{
   border-radius: 0;
+}
+
+
+#sobre_imagem{
+  height: 500px;
 }
 
 /*Imagens dos Produtos*/
@@ -295,19 +308,6 @@ a{
   line-height: 0.8;
 }
 
-
-
-
-
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-  }
-  
-  html {
-    box-sizing: border-box;
-  }
   
   *, *:before, *:after {
     box-sizing: inherit;
@@ -323,13 +323,6 @@ body {
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: 8px;
-  }
-  
-  .about-section {
-    padding: 50px;
-    text-align: center;
-    background-color: #474e5d;
-    color: white;
   }
   
   .container {
@@ -384,9 +377,10 @@ body {
   color: white;
 }
 
-
-
-
+.fa-solid{
+color: red;
+margin-bottom: 5%;
+}
 #myBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
