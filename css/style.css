@@ -64,6 +64,7 @@ body {
 }
 
 
+
 /*Seccção da nav (navbar, links de navegação)*/
 .nav {
   list-style-type: none;
@@ -148,6 +149,12 @@ a {
 .container-back {
   margin-left: 15%;
   margin-right: 15%;
+}
+
+.inicio{
+  height: 500px;
+  width: 100%;
+  
 }
 
 /*Carousel*/
