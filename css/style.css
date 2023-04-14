@@ -1,8 +1,4 @@
-body {
-  background-color: rgb(252, 239, 216);
-}
-
-/*Logo do Site*/
+/*Logo dO Site*/
 .logo {
   width: 150px;
 }
@@ -87,11 +83,6 @@ body {
 a {
   text-decoration: none;
 }
-
-/* .navbar{
-  background-color:rgb(249, 189, 104);
-  background-color: rgb(235, 170, 100);
-} */
 
 .navbar-nav a {
   border-bottom: 3px solid rgba(0, 0, 108, 0) !important;
@@ -204,14 +195,12 @@ a {
 
 .card {
   border: 0;
-  background-color: wheat;
-
+  
 }
 
-.card-img-top {
-  width: 200px;
-  height: 300px;
-
+.card-img-top{
+    width: 200px;
+    height: 300px;  
 }
 
 .card-img-top:hover {
