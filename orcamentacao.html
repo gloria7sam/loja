@@ -82,37 +82,36 @@
 <hr>
   <form action="">
     <div class="form">
-      <div>
-      <label for="name">Nome</label>
-      <input type="text" name="name" id="name">
+      <div class="p-2 text-start">
+      <label for="name">Nome</label><br>
+      <input type="text" name="name" class="w-25" id="name" placeholder="Nome">
       </div>
       
-      <div>
-        <label for="morada">Morada</label>
-      <input type="text" name="morada" id="morada">
+      <div class="p-2">
+        <label for="email">Email</label><br>
+      <input type="text" name="morada" class="w-25" id="morada" placeholder="Email">
       </div>
       
-      <div>
-        <label for="nif">NIF</label>
-      <input type="text" name="nif" id="nif">
+      
+      <div class="p-2">
+        <label for="servicos">Serviço</label><br>
+        <select name="servicos" class="w-25" id="servicos" class="p-1">
+          <option value="volvo">Selecione a opção</option>
+          <option value="saab">Restauro</option>
+          <option value="fiat">Gravação em metal</option>
+          <option value="audi">Polimento de metais</option>
+          <option value="audi">Pintura de azulejos</option>
+        </select>
+      
       </div>
       
-      <div>
-        <label for="servicos">Serviço</label>
-      <input type="text" name="servicos" id="servicos">
+      <div class="p-2">
+        <label for="descricao">Descrição: </label><br>
+        <textarea name="descricao" class="w-25" id="descricao" cols="30" rows="10"></textarea>
       </div>
-      
-      <div>
-        <label for="objeto">Objeto</label>
-        <input type="text" name="objeto" id="objeto">
-      </div>
-      
 
-      <label for="nome">Nome</label>
-      <input type="text" name="" id="">
-
       <div>
-        <button class="btn btn-primary">Submeter</button>
+        <button class="btn bg-dark text-white">Submeter</button>
       </div>
       
     </div>

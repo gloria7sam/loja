@@ -402,12 +402,20 @@ a {
 }
 
 
+[class*="col-"] {
+  width: 100%;
+}
 
-@media only screen and (max-device-width: 900px) {
-  /* .menu { width:600px; } */
+@media only screen and (max-width: 500px) {
+  .icon-bar{
+    display: none;
+  }
+
 }
 
 
-.div-anuncio{
-  margin: 0 auto;
+.anuncio{
+  height: 300px;
+  
+  
 }
