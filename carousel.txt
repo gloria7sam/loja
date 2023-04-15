@@ -1,3 +1,5 @@
+ Carousel
+ 
  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -37,3 +39,34 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
+
+
+Destaques
+
+      <div class="row">
+            <div class="coluna col text-center p-5">
+              <img src="img/discount.png" alt="produto" class="imgs-1 p-3">
+              <h6>Promoções</h6>
+              <p>Veja os produtos os produtos que temos em desconto!</p>
+
+              <button class="botao btn bg-black text-white">Ver mais</button>
+            </div>
+
+            <div class=" coluna col text-center p-5">
+              <img src="img/hammer.png" alt="produto" class="imgs-1 p-3">
+              <h6>Trabalhos Realizados</h6>
+              <p>Veja os produtos que temos à disposição!</p>
+              <button class="botao btn bg-black text-white">Ver mais</button>
+            </div>
+           
+            <div class="coluna col text-center p-5">
+              <img src="img/serviços.png" alt="serviço" class="imgs-1 p-3">
+              <h6>Serviços</h6>
+              <p>Verifique os serviços que temos à sua disposição!</p>
+              <button class="botao btn bg-black text-white">Ver mais</button>
+            </div>
+          </div> 
+
+
+
+

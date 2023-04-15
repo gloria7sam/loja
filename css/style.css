@@ -58,6 +58,11 @@ body {
   color: white;
 }
 
+.instagram{
+  background-color: purple;
+  background: linear-gradient(45deg, blue, transparent), radial-gradient(red, transparent);
+}
+
 .content {
   margin-left: 75px;
   font-size: 30px;
@@ -126,6 +131,8 @@ a {
   outline: 0;
 }
 
+
+
 .dropdown-menu {
   border-radius: 0;
   padding-top: 0;
@@ -159,7 +166,9 @@ a {
 
 /*Carousel*/
 .carousel-inner {
-  height: 400px;
+  height: 500px;
+  width: 400px;
+  margin: 0 auto;
 }
 
 .carousel-item {
@@ -174,10 +183,17 @@ a {
   border-radius: 0;
 }
 
+.div-sobre{
+  display: flex;
+}
+
 #sobre-imagem {
   border-radius: 10px;
-  height: 322px;
-  width: 322px;
+  
+  gap: 10%;
+  height: 250px;
+  width: 250px;
+  
 }
 
 /*Imagens dos Produtos*/
