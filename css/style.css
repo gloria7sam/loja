@@ -1,6 +1,7 @@
 body {
   background-color: rgb(252, 239, 216);
-}
+  overflow-x: hidden;
+} 
 
 /*Logo do Site*/
 .logo {
@@ -23,7 +24,7 @@ body {
 .icon-bar a {
   display: block;
   text-align: center;
-  padding: 16px;
+  padding: 12px;
   transition: all 0.3s ease;
   color: white;
   font-size: 20px;
@@ -38,11 +39,6 @@ body {
   color: white;
 }
 
-.twitter {
-  background: #55ACEE;
-  color: white;
-}
-
 .google {
   background: #dd4b39;
   color: white;
@@ -51,16 +47,6 @@ body {
 .linkedin {
   background: #007bb5;
   color: white;
-}
-
-.youtube {
-  background: #bb0000;
-  color: white;
-}
-
-.instagram{
-  background-color: purple;
-  background: linear-gradient(45deg, blue, transparent), radial-gradient(red, transparent);
 }
 
 .content {
@@ -75,8 +61,6 @@ body {
   list-style-type: none;
   padding: 30px;
   text-align: center;
-  width: 1232px;
-
 }
 
 .nav li {
@@ -94,18 +78,8 @@ a {
   text-decoration: none;
 }
 
-/* .navbar{
-  background-color:rgb(249, 189, 104);
-  background-color: rgb(235, 170, 100);
-} */
-
-.navbar-nav a {
-  border-bottom: 3px solid rgba(0, 0, 108, 0) !important;
-
-}
-
 .navbar-nav a:hover {
-  color: rgb(0, 0, 108);
+  color:  rgb(86, 86, 192);
 }
 
 .navbar-nav {
@@ -122,17 +96,6 @@ a {
 }
 
 /*Dropdown*/
-.dropdown-item:hover {
-  background-color: rgb(0, 0, 108);
-  color: white;
-}
-
-.dropdown {
-  outline: 0;
-}
-
-
-
 .dropdown-menu {
   border-radius: 0;
   padding-top: 0;
@@ -145,6 +108,12 @@ a {
 
 .dropdown:hover .dropdown-menu {
   display: block;
+}
+
+.dropdown-item:hover{
+  background-color: rgb(86, 86, 192);
+  color: white;
+  width: 130px;
 }
 
 
@@ -175,16 +144,13 @@ a {
   object-fit: scale-down;
 }
 
-.slide {
-  position: relative;
-}
-
 .botao {
   border-radius: 0;
 }
 
 .div-sobre{
   display: flex;
+  gap: 7px;
 }
 
 #sobre-imagem {
@@ -217,12 +183,20 @@ a {
   background-color: purple;
 }
 
-#badge-conservacao-restauro {
+#badge-pintura {
   background-color: dodgerblue;
 }
 
 #badge-polimento {
   background-color: goldenrod;
+}
+
+#badge-conservacao{
+  background-color: darkolivegreen;
+}
+
+#badge-gravacao{
+  background-color: saddlebrown;
 }
 
 .card {
@@ -250,11 +224,6 @@ a {
   width: 30px;
 }
 
-.footer-links {
-  color: black;
-  text-decoration: none;
-}
-
 .car {
 
   height: 750px;
@@ -264,8 +233,6 @@ a {
 .services {
   width: 20%;
 }
-
-
 
 #cont {
 
@@ -307,10 +274,6 @@ a {
 
 .mensagem {
   border: 0.5px solid lightgrey;
-}
-
-.hr-width {
-  width: 60px;
 }
 
 .btn-primary:hover {
@@ -385,7 +348,6 @@ a {
 
 }
 
-
 .pagination a {
   color: black;
   float: left;
@@ -394,35 +356,18 @@ a {
   transition: background-color .3s;
 }
 
-.pagination a.active {
-  background-color: dodgerblue;
-  color: white;
-}
-
-.fa-solid {
-  color: red;
-  margin-bottom: 5%;
-}
 
 #myBtn {
+  color: red;
   display: none;
-  /* Hidden by default */
   position: fixed;
-  /* Fixed/sticky position */
   bottom: 20px;
-  /* Place the button at the bottom of the page */
   right: 30px;
-  /* Place the button 30px from the right */
   z-index: 99;
-  /* Make sure it does not overlap */
   cursor: pointer;
-  /* Add a mouse pointer on hover */
-
+  margin-bottom: 10%;
 }
 
-.bi {
-  background-color: black;
-}
 
 
 [class*="col-"] {
@@ -438,7 +383,5 @@ a {
 
 
 .anuncio{
-  height: 300px;
-  
-  
+  height: 300px; 
 }
