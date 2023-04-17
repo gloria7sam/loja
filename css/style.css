@@ -12,6 +12,17 @@ body {
   width: 150px;
 }
 
+.pedir-orcamento{
+  border-color: rgb(86, 86, 192);
+  color: rgb(86, 86, 192);
+}
+
+.pedir-orcamento:hover{
+  background-color: rgb(86, 86, 192);
+  border-color: rgb(86, 86, 192);
+  color: white;
+}
+
 /*Icones das redes sociais*/
 .icon-bar {
   position: fixed;
@@ -35,7 +46,7 @@ body {
 }
 
 .facebook {
-  background: #3B5998;
+  background:#1A77F2;
   color: white;
 }
 
@@ -222,6 +233,11 @@ a {
 .redes-sociais {
   height: 30px;
   width: 30px;
+}
+
+.redes-sociais2{
+  height: 40px;
+  width: 40px;
 }
 
 .car {
