@@ -12,10 +12,10 @@ body {
   width: 150px;
 }
 
-.pedir-orcamento{
+/* .pedir-orcamento{
   border-color: rgb(86, 86, 192);
   color: rgb(86, 86, 192);
-}
+} */
 
 .pedir-orcamento:hover{
   background-color: rgb(86, 86, 192);
@@ -401,3 +401,29 @@ a {
 .anuncio{
   height: 300px; 
 }
+
+#name{
+ 
+    border: 0.5px solid lightgrey;
+    height: 40px;
+    width: 60%;
+  
+}
+
+#mail {
+  border: 0.5px solid lightgrey;
+  height: 40px;
+  width: 60%;
+}
+
+#servicos {
+  border: 0.5px solid lightgrey;
+  height: 40px;
+  width: 60%;
+}
+
+
+#descricao {
+  border: 0.5px solid lightgrey;
+}
+
