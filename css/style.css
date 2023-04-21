@@ -12,10 +12,10 @@ body {
   width: 150px;
 }
 
-/* .pedir-orcamento{
+.pedir-orcamento{
   border-color: rgb(86, 86, 192);
   color: rgb(86, 86, 192);
-} */
+}
 
 .pedir-orcamento:hover{
   background-color: rgb(86, 86, 192);
@@ -179,6 +179,11 @@ a {
   width: 300px;
 }
 
+#bomboneira{
+
+  width: 400px;
+}
+
 .imgs-1 {
   width: 30%;
 }
@@ -224,6 +229,10 @@ a {
 
 .card-img-top:hover {
   opacity: 0.5;
+}
+
+.description{
+  background-color: wheat;
 }
 
 .rodape-text {

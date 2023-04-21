@@ -18,11 +18,4 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-function novidade(){
 
-  var nov = document.getElementById('novidade');
-
-  if(nov == true){
-    
-  }
-}
