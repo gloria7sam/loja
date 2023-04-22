@@ -1,21 +1,15 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <title>Produtos</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+  <title>Quadro Bailarinos</title>
   <!--FAVICON-->
   <link rel="shortcut icon" href="img/logo-trans.png" type="image/x-icon">
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
   <!--BOOTSTRAP-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
@@ -25,8 +19,6 @@
 
   <!--CSS-->
   <link rel="stylesheet" href="css/style.css">
-
-
 </head>
 
 <body>
@@ -86,106 +78,64 @@
     </nav>
   </header>
 
-
   <div class="icon-bar">
     <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
     <a href="#" class="google"><i class="fa fa-google"></i></a>
     <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
   </div>
 
-  <main class="container-back mt-4">
-    <h1 class="title text-center text-black">PRODUTOS</h1>
-    <hr>
-    <video src="video/desconto-50.mp4" class="anuncio w-100" autoplay loop></video>
+  <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+    <ol class="breadcrumb ms-5 mt-3">
+      <li class="breadcrumb-item"><a href="produtos.html">Produtos</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Quadro Bailarinos</li>
+    </ol>
+  </nav>
 
-    <div class="row mt-3">
-      <div class="col">
-        <p class="text-secondary">36 artigos</p>
-      </div>
-      <div class="col">
-        <div class="dropdown2 text-end">
-          <button class="btn btn-primary dropdown-toggle " type="button" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            Ordenar
-          </button>
-          <ul class="dropdown-menu p-3" id="dropdown-menu">
-            <input type="radio" id="crescente" name="crescente" value="crescente">
-            <label for="crescente">Ordem Crescente</label><br>
-
-            <input type="radio" id="decrescente" name="decrescente" value="decrescente">
-            <label for="decrescente">Ordem Decrescente</label><br>
-
-            <input type="radio" id="barato" name="barato" value="barato">
-            <label for="barato">Mais barato</label><br>
-
-            <input type="radio" id="caro" name="caro" value="caro">
-            <label for="caro">Mais caro</label><br>
-
-            <input type="radio" id="novidades" name="novidades" value="novidades">
-            <label for="Novidades">Novidades</label><br>
-
-            <input type="radio" id="tudo" name="tudo" value="tudo">
-            <label for="tudo">Mostrar tudo</label><br>
-
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid mb-5">
-      <div class="row">
-        <div class="card text-center pt-5 shadow-none" style="width: 18rem;">
-          <img src="img/barco.jpg" class="card-img-top w-100 rounded-0" alt="barco">
-          <div class="card-body">
-            <span class="badge text-bg-danger text-start">Novidade</span>
-            <h5 class="card-title">Barco</h5>
-            <p class="card-text">20,00€</p>
-            <a href="barco-compra.html" class="botao btn bg-black text-white">Ver mais +</a>
-          </div>
-        </div>
-
-        <div class="card text-center pt-5 shadow-none" style="width: 18rem;">
-          <img src="img/bomboneira.jpg" class="card-img-top w-100 rounded-0" alt="bomboneira">
-          <div class="card-body">
-            <span class="badge text-bg-danger text-start">Novidade</span>
-            <h5 class="card-title">Bomboneira</h5>
-            <p class="card-text">20,00€</p>
-            <a href="bomboneira.html" class="botao btn bg-black text-white">Ver mais +</a>
-          </div>
-        </div>
-
-        <div class="card text-center pt-5 shadow-none" style="width: 18rem;">
-          <img src="img/cadeira.jpg" class="card-img-top w-100 rounded-0" alt="cadeira">
-          <div class="card-body"><br>
-            <h5 class="card-title">Cadeira</h5>
-            <p class="card-text">20,00€</p>
-            <a href="cadeira_seculoxxx.html" class="botao btn bg-black text-white">Ver mais +</a>
-          </div>
-        </div>
-        <div class="card text-center pt-5 shadow-none" style="width: 18rem;">
-          <img src="img/cesta2.jpg" class="card-img-top w-100 rounded-0" alt="cesta">
-          <div class="card-body"><br>
-            <h5 class="card-title">Cesta</h5>
-            <p class="card-text">20,00€</p>
-            <a href="bacia.html" class="botao btn bg-black text-white">Ver mais +</a>
-          </div>
-        </div>
-
-        <div class="card text-center pt-5 shadow-none" style="width: 18rem;">
-          <img src="img/moldura4.jpg" class="card-img-top w-100 rounded-0" alt="cadeira">
-          <div class="card-body"><br>
-            <h5 class="card-title">Quadro</h5>
-            <p class="card-text">120,00€</p>
-            <a href="quadro.html" class="botao btn bg-black text-white">Ver mais +</a>
-          </div>
-        </div>
-
-
-      </div>
-
-    </div>
+  <main class="container-back">
     
-    <i class="fa-solid fa-circle-arrow-up fa-2xl" onclick="topFunction()" id="myBtn"></i>
+    <div class="row mt-5 p-5">
+      <div class="col">
+        <div id="carouselExampleAutoplaying" class="carousel slide" >
 
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="img/moldura4.jpg"><img src="img/moldura4.jpg" class="d-block w-100" alt="barco"></a>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="false"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </div>
+      </div>
+
+      <div class="col">
+        
+        <h2>Quadro Bailarinos</h2>
+        <h4 class="pt-3">120,00€</h4>
+        <p class="pt-4"><strong>Referência:</strong></strong> 1111</p>
+        <p><strong> Tamanho:</strong> 35cm de comprimento</p>
+        <p><strong>Quantidade:</strong> Peça Única</p>
+        <p><strong>Autor:</strong> Ana Paula Rodrigues</p>
+        <p><strong>Estado:</strong> Polido</p>
+        <button class="btn bg-black text-white">Reservar</button>
+      </div>
+    </div>
+
+    <div class="description p-4 mb-5 rounded-5">
+      <h5>Quadro Bailarinos</h5>
+      <hr>
+      <h6><strong>Descrição</strong></h6>
+      <p class="pt-4"><strong>Referência:</strong> 1111</p>
+      <p><strong>Tamanho:</strong> 35cm de comprimento</p>
+      <p><strong>Estado:</strong> Polido</p>
+    </div>
   </main>
 
   <footer class="container-fluid bg-dark" id="color-link">
@@ -204,10 +154,10 @@
         <h6>EMPRESA</h6>
         <br>
         <a href="sobre.html" class="footer-links" id="color-link">Sobre Nós</a><br>
-        <a href="equipa.html" class="footer-links" id="color-link">A equipa</a><br>
+        <a href="equipa.html" class="footer-links" id="color-link">Equipa e Parcerias</a><br>
         <a href="produtos.html" class="footer-links" id="color-link">Produtos</a><br>
         <a href="servicos.html" class="footer-links" id="color-link">Serviços</a><br>
-        <a href="trabalhos_realizados.html" class="footer-links" id="color-link">Trabalhos Realizados</a><br>
+        <a href="trabalhos_realizadoshtml" class="footer-links" id="color-link">Trabalhos Realizados</a><br>
         <a href="contactos.html" class="footer-links" id="color-link">Contactos</a><br>
       </div>
 
@@ -242,10 +192,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
-
-
-
 </body>
-
 
 </html>
