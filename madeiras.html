@@ -59,10 +59,11 @@
                 TRABALHOS REALIZADOS
               </a>
               <ul class="dropdown-menu">
-                <li><a href="madeiras.html"><button class="dropdown-item" type="button">Madeiras</button></a></li>
-                <li><a href="metais.html"><button class="dropdown-item" type="button">Metais</button></a></li>
-                <li><a href="ceramica.html"><button class="dropdown-item" type="button">Cerâmicas</button></a></li>
-                <li><a href="outros.html"><button class="dropdown-item" type="button">Outros</button></a></li>
+                  <li><a href="madeiras.html"><button class="dropdown-item" type="button">Madeiras</button></a></li>
+                  <li><a href="metais.html"><button class="dropdown-item" type="button">Metais</button></a></li>
+                  <li><a href="ceramica.html"><button class="dropdown-item" type="button">Cerâmicas</button></a></li>
+                  <li><a href="papeis.html"><button class="dropdown-item" type="button">Papéis</button></a></li>
+                  <li><a href="outros.html"><button class="dropdown-item" type="button">Outros</button></a></li>
               </ul>
             </div>
 
@@ -80,14 +81,38 @@
 </header>
 
 <div class="icon-bar">
-  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-  <a href="#" class="google"><i class="fa fa-google"></i></a>
-  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+  <a href="https://www.facebook.com/profile.php?id=100086106047742" class="facebook"><i class="fa fa-facebook"></i></a>
+  <a href="pergaminho.vanguarda@gmail.com" class="google"><i class="fa fa-google"></i></a>
+  <a href="https://www.linkedin.com/company/pergaminho-vanguarda/" class="linkedin"><i class="fa fa-linkedin"></i></a>
 </div>
 
 <main class="container-back">
   <h1 class="text-center mt-3">MADEIRAS</h1>
   <hr>
+  <div class="dropdown2 text-end">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+      aria-expanded="false">
+      Ordenar
+    </button>
+    <ul class="dropdown-menu p-3" id="dropdown-menu">
+      <input type="radio" id="crescente" name="opcao" value="crescente">
+      <label for="crescente">Conservação</label><br>
+
+      <input type="radio" id="decrescente" name="opcao" value="decrescente">
+      <label for="decrescente">Restauro</label><br>
+
+      <input type="radio" id="barato" name="opcao" value="barato">
+      <label for="barato">Pintura</label><br>
+
+      <input type="radio" id="caro" name="opcao" value="caro">
+      <label for="caro">Produção</label><br>
+
+      <input type="radio" id="tudo" name="opcao" value="tudo" onclick="mostrarTodos()">
+      <label for="tudo">Mostrar tudo</label><br>
+      <br>
+
+    </ul>
+  </div>
   <div class="row">
     <div class="card text-center pt-5 shadow-none" style="width: 18rem;">
       <img src="img/barco.jpg" class="card-img-top w-100 rounded-0" alt="barco">
@@ -135,6 +160,16 @@
         <a href="base.html" class="botao btn bg-black text-white">Ver mais +</a>
       </div>
     </div>
+
+    <div class="card text-center pt-5 shadow-none" style="width: 18rem;">
+      <img src="img/ampulheta2.jpg" class="card-img-top w-100 rounded-0" alt="barco">
+      <div class="card-body">
+        <h5 class="card-title">Base</h5>
+        <span class="badge text-start" id="badge-producao">Produção</span><br><br>
+        <a href="base.html" class="botao btn bg-black text-white">Ver mais +</a>
+      </div>
+    </div>
+
   </div>
   <br><br><br><br>
   

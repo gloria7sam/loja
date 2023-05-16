@@ -173,6 +173,15 @@ a {
   
 }
 
+.emcad{
+  width: 30%;
+}
+
+input[type="radio"]:checked + label {
+  font-weight: 700;
+  
+}
+
 /*Imagens dos Produtos*/
 .produtos {
   border: 2px solid black;
@@ -222,10 +231,10 @@ a {
 }
 
 .card-img-top {
-  width: 200px;
+  width: 300px;
   height: 300px;
 
-}
+} 
 
 .card-img-top:hover {
   opacity: 0.5;
@@ -372,6 +381,7 @@ a {
   }
 
 }
+
 
 .pagination a {
   color: black;

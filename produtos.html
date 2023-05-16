@@ -55,7 +55,18 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="produtos.html">PRODUTOS</a>
+              <div class="dropdown">
+                <a class="nav-link dropdown-toggle" id="navtrab" data-bs-toggle="dropdown">
+                  PRODUTOS
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="madeiras.html"><button class="dropdown-item" type="button">Madeiras</button></a></li>
+                  <li><a href="metais.html"><button class="dropdown-item" type="button">Metais</button></a></li>
+                  <li><a href="ceramica.html"><button class="dropdown-item" type="button">Cerâmicas</button></a></li>
+                  <li><a href="papeis.html"><button class="dropdown-item" type="button">Papéis</button></a></li>
+                  <li><a href="outros.html"><button class="dropdown-item" type="button">Outros</button></a></li>
+                </ul>
+              </div>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="servicos.html">SERVIÇOS</a>
@@ -69,6 +80,7 @@
                   <li><a href="madeiras.html"><button class="dropdown-item" type="button">Madeiras</button></a></li>
                   <li><a href="metais.html"><button class="dropdown-item" type="button">Metais</button></a></li>
                   <li><a href="ceramica.html"><button class="dropdown-item" type="button">Cerâmicas</button></a></li>
+                  <li><a href="papeis.html"><button class="dropdown-item" type="button">Papéis</button></a></li>
                   <li><a href="outros.html"><button class="dropdown-item" type="button">Outros</button></a></li>
                 </ul>
               </div>
@@ -88,9 +100,9 @@
 
 
   <div class="icon-bar">
-    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-    <a href="#" class="google"><i class="fa fa-google"></i></a>
-    <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=100086106047742" class="facebook"><i class="fa fa-facebook"></i></a>
+    <a href="pergaminho.vanguarda@gmail.com" class="google"><i class="fa fa-google"></i></a>
+    <a href="https://www.linkedin.com/company/pergaminho-vanguarda/" class="linkedin"><i class="fa fa-linkedin"></i></a>
   </div>
 
   <main class="container-back mt-4">
@@ -102,35 +114,39 @@
       <div class="col">
         <p class="text-secondary">36 artigos</p>
       </div>
+
       <div class="col">
+
         <div class="dropdown2 text-end">
-          <button class="btn btn-primary dropdown-toggle " type="button" data-bs-toggle="dropdown"
+          <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
             aria-expanded="false">
             Ordenar
           </button>
           <ul class="dropdown-menu p-3" id="dropdown-menu">
-            <input type="radio" id="crescente" name="crescente" value="crescente">
+            <input type="radio" id="crescente" name="opcao" value="crescente">
             <label for="crescente">Ordem Crescente</label><br>
 
-            <input type="radio" id="decrescente" name="decrescente" value="decrescente">
+            <input type="radio" id="decrescente" name="opcao" value="decrescente">
             <label for="decrescente">Ordem Decrescente</label><br>
 
-            <input type="radio" id="barato" name="barato" value="barato">
+            <input type="radio" id="barato" name="opcao" value="barato" onclick="maisBarato()">
             <label for="barato">Mais barato</label><br>
 
-            <input type="radio" id="caro" name="caro" value="caro">
+            <input type="radio" id="caro" name="opcao" value="caro">
             <label for="caro">Mais caro</label><br>
 
-            <input type="radio" id="novidades" name="novidades" value="novidades">
+            <input type="radio" id="novidades" name="opcao" value="novidades" onclick="novidades()">
             <label for="Novidades">Novidades</label><br>
 
-            <input type="radio" id="tudo" name="tudo" value="tudo">
+            <input type="radio" id="tudo" name="opcao" value="tudo" onclick="mostrarTodos()">
             <label for="tudo">Mostrar tudo</label><br>
+            <br>
 
           </ul>
         </div>
       </div>
     </div>
+
     <div class="container-fluid mb-5">
       <div class="row">
         <div class="card text-center pt-5 shadow-none" style="width: 18rem;">
@@ -138,46 +154,57 @@
           <div class="card-body">
             <span class="badge text-bg-danger text-start">Novidade</span>
             <h5 class="card-title">Barco</h5>
-            <p class="card-text">20,00€</p>
+            <p class="card-text" id="price">70,00€</p>
             <a href="barco-compra.html" class="botao btn bg-black text-white">Ver mais +</a>
           </div>
         </div>
 
-        <div class="card text-center pt-5 shadow-none" style="width: 18rem;">
+        <div class="card text-center pt-5 shadow-none"  style="width: 18rem;">
           <img src="img/bomboneira.jpg" class="card-img-top w-100 rounded-0" alt="bomboneira">
           <div class="card-body">
             <span class="badge text-bg-danger text-start">Novidade</span>
             <h5 class="card-title">Bomboneira</h5>
-            <p class="card-text">20,00€</p>
+            <p class="card-text" id="price">20,00€</p>
             <a href="bomboneira.html" class="botao btn bg-black text-white">Ver mais +</a>
           </div>
         </div>
 
-        <div class="card text-center pt-5 shadow-none" style="width: 18rem;">
+        <div class="card text-center pt-5 shadow-none"id="div-3" style="width: 18rem;">
           <img src="img/cadeira.jpg" class="card-img-top w-100 rounded-0" alt="cadeira">
           <div class="card-body"><br>
             <h5 class="card-title">Cadeira</h5>
-            <p class="card-text">20,00€</p>
+            <p class="card-text" id="price">20,00€</p>
             <a href="cadeira_seculoxxx.html" class="botao btn bg-black text-white">Ver mais +</a>
           </div>
         </div>
-        <div class="card text-center pt-5 shadow-none" style="width: 18rem;">
+        <div class="card text-center pt-5 shadow-none" id="div-4" style="width: 18rem;">
           <img src="img/cesta2.jpg" class="card-img-top w-100 rounded-0" alt="cesta">
           <div class="card-body"><br>
             <h5 class="card-title">Cesta</h5>
-            <p class="card-text">20,00€</p>
+            <p class="card-text" id="price">20,00€</p>
             <a href="bacia.html" class="botao btn bg-black text-white">Ver mais +</a>
           </div>
         </div>
 
-        <div class="card text-center pt-5 shadow-none" style="width: 18rem;">
+        <div class="card text-center pt-5 shadow-none" id="div-5" style="width: 18rem;">
           <img src="img/moldura4.jpg" class="card-img-top w-100 rounded-0" alt="cadeira">
           <div class="card-body"><br>
             <h5 class="card-title">Quadro</h5>
-            <p class="card-text">120,00€</p>
+            <p class="card-text" id="price">120,00€</p>
             <a href="quadro.html" class="botao btn bg-black text-white">Ver mais +</a>
           </div>
         </div>
+
+        <div class="card text-center pt-5 shadow-none" id="div-6" style="width: 18rem;">
+          <img src="img/jarra_verde.jpg" class="card-img-top w-100 rounded-0" alt="jarra_verde">
+          <div class="card-body"><br>
+            <span class="badge text-bg-danger text-start">Novidade</span>
+            <h5 class="card-title">Jarra verde</h5>
+            <p class="card-text">20,00€</p>
+            <a href="jarra_verde.html" class="botao btn bg-black text-white">Ver mais +</a>
+          </div>
+        </div>
+
 
 
       </div>
