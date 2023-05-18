@@ -90,49 +90,85 @@
   <h1 class="text-center">Orçamento</h1>
   <hr>
 
-  <div class="div-orcamento">
-  <form action="" classs="form-orcamento">
-    <div class="form">
-      <div class="p-2 text-start">
-        <label for="pnome">Nome</label><br>
-        <input type="text" name="name" class="w-25" id="pnome" placeholder="Nome">
+  
+  <form action="https://formsubmit.co/pergaminho.vanguarda@gmail.com" method="POST" class="form-orcamento" name="enviar" enctype="multipart/form-data">
+    <input type="hidden" name="_next" value="http://127.0.0.1:5500/sucesso.html">
+    <input type="hidden" name="_autoresponse" value="A sua mensagem foi recebida com sucesso. Agradecemos pelo contacto, responderemos num prazo máximo de 5 dias.">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_subject" value="Pedido de Orçamento">
+      <div class="row">
+        <div class="col pb-5">
+          <div class="p-2">
+            <label for="pnome" class="name-or">Nome</label><br>
+            <input type="text" name="nome" id="pnome" placeholder="Nome">
+          </div>
+          
+          <div class="p-2">
+            <label for="telemovel">Telemóvel</label><br>
+            <input type="tel" name="telemovel" id="telemovel" placeholder="Telemóvel" maxlength="9">
+          </div>
+
+        </div>
+
+
+        <div class="col pb-5">
+          <div class="p-2">
+            <label for="email">Email</label><br>
+            <input type="text" name="email"  id="mail2" placeholder="Email">
+          </div>
+
+          <div class="p-2">
+            <label for="servicos">Serviço</label><br>
+            <select name="servicos"  id="servicos" class="p-1">
+              <option value="Selecionar"name="selecionar">Selecione a opção</option>
+              <option value="Restauro">Restauro</option>
+              <option value="Gravação em metal">Gravação em metal</option>
+              <option value="Polimento de Metais">Polimento de metais</option>
+              <option value="Pintura de Azulejos">Pintura de azulejos</option>
+              <option value="Outros">Outros</option>
+            </select>
+    
+          </div>
+
+        </div>
+
       </div>
 
-      <div class="p-2">
-        <label for="email">Email</label><br>
-        <input type="text" name="morada" class="w-25" id="mail" placeholder="Email">
-      </div>
-
-
-      <div class="p-2">
-        <label for="servicos">Serviço</label><br>
-        <select name="servicos" class="w-25" id="servicos" class="p-1">
-          <option value="volvo">Selecione a opção</option>
-          <option value="saab">Restauro</option>
-          <option value="fiat">Gravação em metal</option>
-          <option value="audi">Polimento de metais</option>
-          <option value="audi">Pintura de azulejos</option>
-        </select>
-
-      </div>
 
       <div class="p-2">
         <label for="descricao">Descrição: </label><br>
-        <textarea name="descricao" class="w-25" id="descricao" cols="30" rows="10"></textarea>
+        <textarea name="descricao"  id="descricao" cols="110" rows="10"></textarea>
       </div>
 
+      <div class="p-2">
+        <label for="pref" name="preferencia-contacto">Preferência de contacto</label><br>
+        <input type="radio" name="preferencia-email" id="email-pref">
+        <label for="mail" name="telemovel">Email</label><br>
+
+        <input type="radio" name="preferencia-telemovel" id="telemovel-pref">
+        <label for="tel" name="telemóvel">Telemóvel</label><br><br>
+      </div>
+
+      
+  <label for="files">Select files:</label>
+  <input type="file" id="files" name="imagens" accept="image/png, image/jpeg" multiple="multiple"><br><br>
+<!--   <input type="file" name="attachment" accept="image/png, image/jpeg"> -->
+  
+
+
+<img src="" id="picture" alt="">
       <div>
-        <button class="btn bg-dark text-white ms-2" onclick="orcamento()">Submeter</button>
-        <button onclick="alerta()">Alerta</button>
+       <button type="submit" value="Submeter">Submeter</button>
       </div>      
-    </div>
+    
   </form>
-</div>
+
   <br><br>
 </main>
+
 <footer class="container-fluid bg-dark" id="color-link">
   <div class="row">
-    <div class="col p-4" id="info-links">
+    <div class="col p-4">
       <h6>INFORMAÇÕES</h6>
       <br>
       <p>Pergaminho Vanguarda</p>
@@ -179,9 +215,6 @@
 
 </footer>
 
-<script>
-
-</script>
 <!--SWEET ALERT-->
 <script src="js/sweetalert2.js"></script>
 <script src="js/sweet.js"></script>

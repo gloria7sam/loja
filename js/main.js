@@ -76,10 +76,11 @@ function mostrarTodos() {
   document.getElementById("div-6").style.display="block";
 }
 
-function maisBarato(){
-  let price = document.getElementById("price").value;
+function picture(){
+  let pic = document.getElementById('files').value;
+  //let pictures = document.getElementById('picture');
 
-  if(price > price - 1){
-    document.getElementById("price").value;
+  if(pic != ""){
+    document.getElementById('picture').src = pic;
   }
 }

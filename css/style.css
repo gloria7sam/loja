@@ -320,10 +320,6 @@ input[type="radio"]:checked + label {
 
 }
 
-#info-links {
-  line-height: 0.8;
-}
-
 
 *,
 *:before,
@@ -417,11 +413,7 @@ input[type="radio"]:checked + label {
 }
 
 
-.anuncio{
-  height: 300px; 
-}
-
-#name{
+#pnome{
  
     border: 0.5px solid lightgrey;
     height: 40px;
@@ -435,14 +427,26 @@ input[type="radio"]:checked + label {
   width: 60%;
 }
 
+#telemovel {
+  border: 0.5px solid lightgrey;
+  height: 40px;
+  width: 60%;
+}
+
 #servicos {
   border: 0.5px solid lightgrey;
   height: 40px;
   width: 60%;
 }
 
+#mail2{
+  
+    border: 0.5px solid lightgrey;
+    height: 40px;
+    width: 60%;
+  
+}
 
 #descricao {
   border: 0.5px solid lightgrey;
 }
-
