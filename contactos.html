@@ -97,6 +97,9 @@
       <div class="row ">
         <div class="col">
           <form action="https://formsubmit.co/pergaminho.vanguarda@gmail.com" method="POST">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/sucesso.html">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_subject" value="Contacto">
             <div>
               <label for="nome">Nome:</label><br>
               <input type="text" name="nome" id="nome" placeholder="Nome">
@@ -114,10 +117,10 @@
 
             <br><br>
 
-            <textarea name="" id="" cols="40" rows="10" class="mensagem"></textarea>
+            <textarea name="" id="" cols="40" rows="10" class="mensagem_contacto"></textarea>
 
             <br><br>
-            <button type="submit">Submeter</button>
+            <button type="submit" class="submeter-orcamento" name="mensagem" value="submeter">Submeter</button>
           </form>
 
         </div>

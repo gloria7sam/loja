@@ -84,3 +84,13 @@ function picture(){
     document.getElementById('picture').src = pic;
   }
 }
+
+function preferenciaContacto(){
+  let email = document.getElementById('email-pref');
+  let telemovel = document.getElementById('telemovel-pref');
+
+  if(email != "" || telemovel != ""){
+    document.getElementById('email-pref').style.backgroundColor = "blue";
+    document.getElementById('telemovel-pref').style.backgroundColor = "blue";
+  }
+}

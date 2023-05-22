@@ -416,9 +416,17 @@ input[type="radio"]:checked + label {
 #pnome{
  
     border: 0.5px solid lightgrey;
+    border-radius: 15px;
     height: 40px;
-    width: 60%;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    width: 70%;
   
+}
+
+#pnome:focus{
+border: 1px solid green; 
 }
 
 #mail {
@@ -427,26 +435,89 @@ input[type="radio"]:checked + label {
   width: 60%;
 }
 
+#mail2 {
+  border: 0.5px solid lightgrey;
+  border-radius: 15px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  height: 40px;
+  width: 70%;
+}
+
+#mail2:focus{
+  border: 1px solid green;
+}
+
 #telemovel {
   border: 0.5px solid lightgrey;
+  border-radius: 15px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
   height: 40px;
-  width: 60%;
+  width: 70%;
 }
+
+#telemovel:focus{
+  border: 1px solid green;
+}
+
 
 #servicos {
   border: 0.5px solid lightgrey;
+  border-radius: 15px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
   height: 40px;
-  width: 60%;
+  width: 70%;
+}
+
+#servicos:focus{
+  border: 1px solid green;
 }
 
 #mail2{
   
     border: 0.5px solid lightgrey;
     height: 40px;
-    width: 60%;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    width: 70%;
   
 }
 
 #descricao {
   border: 0.5px solid lightgrey;
 }
+
+#descricao:focus{
+  border: 1px solid green;
+}
+
+#input[type="radio"]:checked{
+background-color: blue;
+}
+
+.form-orcamento{
+  justify-content: center;
+}
+
+.submeter-orcamento{
+  background-color:#4CAF50;
+  border: none;
+  color: white;
+  margin-left: 20%;
+  padding: 5px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 50%;
+}
+
+.submeter-orcamento:hover{
+  background-color:#5cc25f;
+}
+

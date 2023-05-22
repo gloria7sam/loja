@@ -87,11 +87,11 @@
 </div>
 
 <main class="container-back">
-  <h1 class="text-center">Orçamento</h1>
+  <h1 class="text-center pt-3">Orçamento</h1>
   <hr>
 
   
-  <form action="https://formsubmit.co/pergaminho.vanguarda@gmail.com" method="POST" class="form-orcamento" name="enviar" enctype="multipart/form-data">
+  <form action="https://formsubmit.co/pergaminho.vanguarda@gmail.com" method="POST" class="form-orcamento ms-5" name="enviar" enctype="multipart/form-data">
     <input type="hidden" name="_next" value="http://127.0.0.1:5500/sucesso.html">
     <input type="hidden" name="_autoresponse" value="A sua mensagem foi recebida com sucesso. Agradecemos pelo contacto, responderemos num prazo máximo de 5 dias.">
     <input type="hidden" name="_template" value="table">
@@ -100,12 +100,12 @@
         <div class="col pb-5">
           <div class="p-2">
             <label for="pnome" class="name-or">Nome</label><br>
-            <input type="text" name="nome" id="pnome" placeholder="Nome">
+            <input type="text" class="ps-2" name="nome" id="pnome" placeholder="Nome">
           </div>
           
           <div class="p-2">
             <label for="telemovel">Telemóvel</label><br>
-            <input type="tel" name="telemovel" id="telemovel" placeholder="Telemóvel" maxlength="9">
+            <input type="tel" class="ps-2" name="telemovel" id="telemovel" placeholder="Telemóvel" maxlength="9">
           </div>
 
         </div>
@@ -114,7 +114,7 @@
         <div class="col pb-5">
           <div class="p-2">
             <label for="email">Email</label><br>
-            <input type="text" name="email"  id="mail2" placeholder="Email">
+            <input type="text" class="ps-2" name="email"  id="mail2" placeholder="Email">
           </div>
 
           <div class="p-2">
@@ -137,28 +137,27 @@
 
       <div class="p-2">
         <label for="descricao">Descrição: </label><br>
-        <textarea name="descricao"  id="descricao" cols="110" rows="10"></textarea>
+        <textarea name="descricao"  id="descricao" cols="115" rows="10"></textarea>
       </div>
 
       <div class="p-2">
         <label for="pref" name="preferencia-contacto">Preferência de contacto</label><br>
-        <input type="radio" name="preferencia-email" id="email-pref">
-        <label for="mail" name="telemovel">Email</label><br>
 
-        <input type="radio" name="preferencia-telemovel" id="telemovel-pref">
-        <label for="tel" name="telemóvel">Telemóvel</label><br><br>
+        <input type="radio" name="preferencia" id="email-pref">
+        <label for="mail" name="email-preferencia">Email</label><br>
+
+        <input type="radio" name="preferencia" id="telemovel-pref">
+        <label for="tel" name="telemovel-preferencia">Telemóvel</label><br><br>
       </div>
 
       
   <label for="files">Select files:</label>
-  <input type="file" id="files" name="imagens" accept="image/png, image/jpeg" multiple="multiple"><br><br>
-<!--   <input type="file" name="attachment" accept="image/png, image/jpeg"> -->
+  <input type="file" id="files" name="imagens[]" accept="image/png, image/jpeg" multiple="multiple"><br><br>
+  <!--   <input type="file" name="attachment" accept="image/png, image/jpeg"> -->
   
 
-
-<img src="" id="picture" alt="">
       <div>
-       <button type="submit" value="Submeter">Submeter</button>
+       <button type="submit" class="submeter-orcamento" value="Submeter">Submeter</button>
       </div>      
     
   </form>
