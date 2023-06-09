@@ -5,11 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Papeis</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+  <title>Solicitar reserva</title>
   <!--FAVICON-->
   <link rel="shortcut icon" href="img/logo-trans.png" type="image/x-icon">
 
@@ -20,11 +16,14 @@
   <!--FONTAWSOME-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+  <!--SWEETALERT-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.min.css">
+
   <!--CSS-->
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
+
 <header>
   <nav class="navbar navbar-expand-lg bg-body-secondary container-fluid navbar-fixed-top shadow">
     <div>
@@ -61,10 +60,10 @@
               </a>
               <ul class="dropdown-menu">
                 <li><a href="madeiras.html"><button class="dropdown-item" type="button">Madeiras</button></a></li>
-                  <li><a href="metais.html"><button class="dropdown-item" type="button">Metais</button></a></li>
-                  <li><a href="ceramica.html"><button class="dropdown-item" type="button">Cerâmicas</button></a></li>
-                  <li><a href="papeis.html"><button class="dropdown-item" type="button">Papéis</button></a></li>
-                  <li><a href="outros.html"><button class="dropdown-item" type="button">Outros</button></a></li>
+                <li><a href="metais.html"><button class="dropdown-item" type="button">Metais</button></a></li>
+                <li><a href="ceramica.html"><button class="dropdown-item" type="button">Cerâmicas</button></a></li>
+                <li><a href="papeis.html"><button class="dropdown-item" type="button">Papéis</button></a></li>
+                <li><a href="outros.html"><button class="dropdown-item" type="button">Outros</button></a></li>
               </ul>
             </div>
 
@@ -82,30 +81,90 @@
 </header>
 
 <div class="icon-bar">
-  <a href="https://www.facebook.com/profile.php?id=100086106047742" class="facebook"><i class="fa fa-facebook"></i></a>
-  <a href="pergaminho.vanguarda@gmail.com" class="google"><i class="fa fa-google"></i></a>
-  <a href="https://www.linkedin.com/company/pergaminho-vanguarda/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=100086106047742" class="facebook"><i class="fa fa-facebook"></i></a>
+    <a href="pergaminho.vanguarda@gmail.com" class="google"><i class="fa fa-google"></i></a>
+    <a href="https://www.linkedin.com/company/pergaminho-vanguarda/" class="linkedin"><i class="fa fa-linkedin"></i></a>
 </div>
 
 <main class="container-back">
-  <h1 class="text-center mt-3">PAPÉIS</h1>
+  <h1 class="text-center pt-3">Reserva</h1>
   <hr>
-  <div class="row">
-    <div class="card text-center pt-5 shadow-none" style="width: 18rem;">
-      <img src="img/album5.png" class="card-img-top w-100 rounded-0" alt="barco">
-      <div class="card-body">
-        <h5 class="card-title">Álbum</h5>
-        <span class="badge text-start" id="badge-polimento">Polimento</span><br><br>
-        <a href="album.html" class="botao btn bg-black text-white">Ver mais +</a>
+
+  
+  <form action="https://formsubmit.co/pergaminho.vanguarda@gmail.com" method="POST" class="form-orcamento ms-5" name="enviar" enctype="multipart/form-data">
+    <input type="hidden" name="_next" value="http://127.0.0.1:5500/sucesso.html">
+    <input type="hidden" name="_autoresponse" value="A sua mensagem foi recebida com sucesso. Agradecemos pelo contacto, responderemos num prazo máximo de 5 dias.">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_subject" value="Pedido de Orçamento">
+      <div class="row">
+        <div class="col pb-5">
+          <div class="p-2">
+            <label for="pnome" class="name-or">Nome</label><br>
+            <input type="text" class="ps-2" name="nome" id="pnome" placeholder="Nome">
+          </div>
+          
+          <div class="p-2">
+            <label for="telemovel">Telemóvel</label><br>
+            <input type="tel" class="ps-2" name="telemovel" id="telemovel" placeholder="Telemóvel" maxlength="9">
+          </div>
+
+        </div>
+
+
+        <div class="col pb-5">
+          <div class="p-2">
+            <label for="email">Email</label><br>
+            <input type="text" class="ps-2" name="email"  id="mail2" placeholder="Email">
+          </div>
+
+          <div class="p-2">
+            <label for="servicos">Serviço</label><br>
+            <select name="servicos"  id="servicos" class="p-1">
+              <option value="Selecionar"name="selecionar">Selecione a opção</option>
+              <option value="Restauro">Restauro</option>
+              <option value="Gravação em metal">Gravação em metal</option>
+              <option value="Polimento de Metais">Polimento de metais</option>
+              <option value="Pintura de Azulejos">Pintura de azulejos</option>
+              <option value="Outros">Outros</option>
+            </select>
+    
+          </div>
+
+        </div>
+
       </div>
-    </div>
-  </div>
 
-  <br><br><br><br>
 
-  <i class="fa-solid fa-circle-arrow-up fa-2xl" onclick="topFunction()" id="myBtn"></i>
+      <div class="p-2">
+        <label for="descricao">Descrição: </label><br>
+        <textarea name="descricao"  id="descricao" cols="115" rows="10"></textarea>
+      </div>
 
+      <div class="p-2">
+        <label for="pref" name="preferencia-contacto">Preferência de contacto</label><br>
+
+        <input type="radio" name="preferencia" id="email-pref">
+        <label for="mail" name="email-preferencia">Email</label><br>
+
+        <input type="radio" name="preferencia" id="telemovel-pref">
+        <label for="tel" name="telemovel-preferencia">Telemóvel</label><br><br>
+      </div>
+
+      
+  <label for="files">Select files:</label>
+  <input type="file" id="files" name="imagens[]" accept="image/png, image/jpeg" multiple="multiple"><br><br>
+  <!--   <input type="file" name="attachment" accept="image/png, image/jpeg"> -->
+  
+
+      <div>
+       <button type="submit" class="submeter-orcamento" value="Submeter">Submeter</button>
+      </div>      
+    
+  </form>
+
+  <br><br>
 </main>
+
 <footer class="container-fluid bg-dark" id="color-link">
   <div class="row">
     <div class="col p-4">
@@ -132,11 +191,11 @@
     <div class="col p-4">
       <h6>AJUDA</h6>
       <br>
-      <a href="sobre.html" class="footer-links" id="color-link">Perguntas Frequentes</a><br>
-      <br><br>
+      <a href="faqs.html" id="color-link">Perguntas Frequentes</a>
+      <br><br><br>
       <h6>SIGA-NOS</h6>
       <br>
-      <a href="https://www.facebook.com/profile.php?id=100086106047742"><img src="img/facebook.png" alt="facebook"
+      <a href="https://www.facebook.com/profile.php?id=100086106047742"><img src="img/facebook-logo.png" alt="facebook"
           class="redes-sociais"></a>
       <a href="https://www.instagram.com/pergaminho.vanguarda/"><img src="img/instagram.png" alt="instagram"
           class="redes-sociais"></a>
@@ -155,12 +214,16 @@
 
 </footer>
 
+<!--SWEET ALERT-->
+<script src="js/sweetalert2.js"></script>
+<script src="js/sweet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js"></script>
 
 <!--JAVASCRIPT-->
-  <script src="js/main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-    crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+  crossorigin="anonymous"></script>
 </body>
 
 </html>

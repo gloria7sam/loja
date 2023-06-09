@@ -26,7 +26,7 @@ body {
 /*Icones das redes sociais*/
 .icon-bar {
   position: fixed;
-  top: 45%;
+  top: 40%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -35,10 +35,10 @@ body {
 .icon-bar a {
   display: block;
   text-align: center;
-  padding: 12px;
+  padding: 10px;
   transition: all 0.3s ease;
   color: white;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .icon-bar a:hover {
@@ -48,16 +48,19 @@ body {
 .facebook {
   background:#1A77F2;
   color: white;
+  height: 20px;
 }
 
 .google {
   background: #dd4b39;
   color: white;
+  height: 20px;
 }
 
 .linkedin {
   background: #007bb5;
   color: white;
+  height: 20px;
 }
 
 .content {
@@ -509,15 +512,65 @@ background-color: blue;
   background-color:#4CAF50;
   border: none;
   color: white;
-  margin-left: 20%;
   padding: 5px;
   text-align: center;
   cursor: pointer;
   border-radius: 5px;
-  width: 50%;
+  width: 15%;
+ 
 }
 
 .submeter-orcamento:hover{
   background-color:#5cc25f;
 }
 
+#reserva{
+  display: none;
+}
+
+
+
+/*-----------------------------------------------*/
+/*Carrinho de compras*/
+.cart {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.loja{
+  color:green;
+}
+
+.caption{
+  background-color: #F5DEB3;
+}
+
+.detalhes{
+  margin-left: 14%;
+}
+
+.detalhes-bomboneira{
+  margin-left: 26%;
+}
+
+.detalhes-bules{
+  margin-left: 2%;
+}

@@ -94,3 +94,16 @@ function preferenciaContacto(){
     document.getElementById('telemovel-pref').style.backgroundColor = "blue";
   }
 }
+
+function mostrar(){
+
+  let reserva = document.getElementById('reserva');
+
+  reserva.style.display = "block";
+}
+
+
+/*----------------------------------------*/
+
+const seleciona = (elemento) => document.querySelector(elemento)
+const selecionaTodos = (elemento) => document.querySelectorAll(elemento)
