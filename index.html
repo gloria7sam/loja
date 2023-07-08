@@ -10,8 +10,19 @@
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7F4MY8K5Q5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7F4MY8K5Q5');
+</script>
+
   <!--FAVICON-->
-  <link rel="shortcut icon" href="img/logo-trans.png" type="image/x-icon">
+  <link rel="shortcut icon" href="img/Imagem Redimensionada.png" type="image/x-icon">
+
 
   <!--BOOTSTRAP-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -28,7 +39,7 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg bg-body-secondary fixed-top shadow">
+    <nav class="navbar navbar-expand-lg bg-body-secondary  shadow">
       <div class="div-logo"><a href="index.html"><img src="img/logo-trans.png" alt="logo" class="logo"></a></div>
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -44,7 +55,8 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li><a href="sobre.html"><button class="dropdown-item" type="button">Sobre nós</button></a></li>
-                  <li><a href="equipa.html"><button class="dropdown-item" type="button">Equipa e Parcerias</button></a></li>
+                  <li><a href="equipa.html"><button class="dropdown-item" type="button">Equipa e Parcerias</button></a>
+                  </li>
                 </ul>
               </div>
             </li>
@@ -60,22 +72,23 @@
                   TRABALHOS REALIZADOS
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a href="madeiras.html"><button class="dropdown-item" type="button">Madeiras</button></a></li>
-                    <li><a href="metais.html"><button class="dropdown-item" type="button">Metais</button></a></li>
-                    <li><a href="ceramica.html"><button class="dropdown-item" type="button">Cerâmicas</button></a></li>
-                    <li><a href="papeis.html"><button class="dropdown-item" type="button">Papéis</button></a></li>
-                    <li><a href="outros.html"><button class="dropdown-item" type="button">Outros</button></a></li>
+                  <li><a href="madeiras.html"><button class="dropdown-item" type="button">Madeiras</button></a></li>
+                  <li><a href="metais.html"><button class="dropdown-item" type="button">Metais</button></a></li>
+                  <li><a href="ceramica.html"><button class="dropdown-item" type="button">Cerâmicas</button></a></li>
+                  <li><a href="papeis.html"><button class="dropdown-item" type="button">Papéis</button></a></li>
+                  <li><a href="outros.html"><button class="dropdown-item" type="button">Outros</button></a></li>
                 </ul>
               </div>
-  
+
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contactos.html">CONTACTOS</a>
             </li>
           </ul>
-  
-          <a href="orcamentacao.html"><button class="pedir-orcamento btn btn-outline-success" type="submit">Pedir Orçamento</button></a>
-  
+
+          <a href="orcamentacao.html"><button class="pedir-orcamento btn btn-outline-success" type="submit">Pedir
+              Orçamento</button></a>
+
         </div>
       </div>
     </nav>
@@ -83,63 +96,106 @@
   </header>
 
   <div class="icon-bar">
-    <a href="https://www.facebook.com/profile.php?id=100086106047742" class="facebook"><i class="fa fa-facebook"></i></a>
-    <a href="pergaminho.vanguarda@gmail.com" class="google"><i class="fa fa-google"></i></a>
-    <a href="https://www.linkedin.com/company/pergaminho-vanguarda/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=100086106047742" class="facebook" target="_blank"><i
+        class="fa fa-facebook"></i></a>
+    <a href="https://www.linkedin.com/company/pergaminho-vanguarda/" class="linkedin" target="_blank"><i
+        class="fa fa-linkedin"></i></a>
   </div>
 
 
   <main class="container-back">
-    <br><br><br><br>
-    <video src="video/Pergaminho Vanguarda.mp4" type="video/mp4" autoplay loop class="inicio"></video>
+    <!-- <br><br><br><br><br><br><br> -->
+    <video src="video/inicio.mp4" type="video/mp4" autoplay muted loop class="inicio"></video>
     <br><br><br>
-    <div class="row">
-
-      <div class="coluna col text-center p-5">
-        <img src="img/hammer.png" alt="produto" class="imgs-1 p-3">
-        <h6>Produtos</h6>
-        <p>Veja os produtos que temos à disposição!</p>
-        <a href="produtos.html"><button class="botao btn bg-black text-white">Ver mais</button></a>
-
+    <div class="row justify-content-center">
+      <div>
+        <h3 class="text-center">Novidades</h3>
+        <br>
       </div>
 
-      <div class="coluna col text-center p-5">
-        <img src="img/serviços.png" alt="serviço" class="imgs-1 p-3">
-        <h6>Serviços</h6>
-        <p>Verifique os serviços que temos à sua disposição!</p>
-        <a href="servicos.html"><button class="botao btn bg-black text-white">Ver mais</button></a>
-      </div>
+      <img src="img/workshop_caixa_medieval.jpeg" alt="Workshop de Pintura de Caixas Medievais" id="workshop2">
+    </div>
+    <br>
+    <div class="text-center">
+      <div class="work">
+         <p>🎨<strong>Workshop de Pintura de Caixas  Medievais 🏰✨</strong></p>
+
+         <div class="info">
+         <p> Junte-se a nós no próximo workshop de Pintura de Caixas com Ornamentos Medievais! Descubra técnicas antigas de decoração e aprenda a criar as suas próprias peças únicas, inspiradas na arte medieval. Uma oportunidade imperdível para mergulhar no passado e expressar a sua criatividade.</p>
+        </div>
+        <div class="info">
+          <p>
+          📅 <strong>Data:</strong> Sábado, 1 de julho <br>
+          ⏰ <strong>Horário:</strong> 14h30 às 17h <br>
+          📍 <strong>Local:</strong> Rua Antero de Quental, 762, 4200-066, Porto <br><br>
+        </p>
+         </div> 
+        <div class="info">
+        🔸 Descubra a arte medieval e crie a sua própria caixa única! <br>
+        🔸 Aprenda técnicas antigas de decoração e solte a sua criatividade. <br>
+        🔸 Leve a sua caixa personalizada para casa como um tesouro! <br>
+        </div> 
+
+        <br>
+        <div class="info">
+        <p>💰 <strong>Valor da Inscrição:</strong> 15€ (vagas limitadas) <br>
+           🍽️<strong> Lanche no final:</strong> 1 bifana + bebida (sangria ou sumo) por apenas 5€</p>
+        </div>  
+        <br>
+       <p> 
+          Garanta o seu lugar agora! Inscrições até 29 de junho. Não perca esta oportunidade de viver uma tarde encantadora, cheia de história e arte. Inscreva-se já!</p>
+        
+     </div>
+    </div>
+    <div class="text-center">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSchOIQDg7XcRiHzWm0_wkhMw_ozKObCUWH_6ajsMytsrnB1SQ/viewform"
+        target="_blank">
+        <button class="inscricao btn bg-black text-white">Inscreva-se já!</button>
+      </a>
+    </div>
     </div>
 
-    <br><br>
 
+    <br><br>
+    <h4 class="text-center">Destaques</h4> 
+    <br>
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
 
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="img/tiro_ao_arco.jpg" class="d-block w-100" alt="evento">
+          <img src="img/barco.jpg" class="d-block w-100" alt="evento">
           <div class="carousel-caption d-none d-md-block">
 
-            <h5>Tiro ao Arco</h5>
-            <p>Não perca este evento. Será no dia 22/04/2023.</p>
-
-            <button class="botao btn bg-black text-white">Inscreva-se já!</button>
+            <h5>Madeiras</h5>
+            <a href="madeiras.html"><button class="botao btn bg-black text-white">Ver mais</button></a>
           </div>
         </div>
         <div class="carousel-item">
           <img src="img/bules_polidos.jpg" class="d-block w-100 mx-auto" alt="bules">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Venha conhecer os nossos serviços</h5>
-            <p>Fazemos polimentos e gravação em metais</p>
-            <button class="botao btn bg-black text-white">Ver mais</button>
+            <h5>Metais</h5>
+            <a href="metais.html"><button class="botao btn bg-black text-white">Ver mais</button></a>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="img/calice.jpg" class="d-block w-100 mx-auto" alt="cálice">
+          <img src="img/azulejos2.jpg" class="d-block w-100 mx-auto" alt="bules">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Venha conhecer os nossos serviços</h5>
-            <p>Fazemos polimentos e gravação em metais</p>
-            <button class="botao btn bg-black text-white">Ver mais</button>
+            <h5>Cerâmicas</h5>
+            <a href="ceramica.html"><button class="botao btn bg-black text-white">Ver mais</button></a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/album6.png" class="d-block w-100 mx-auto" alt="álbum">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Papéis</h5>
+            <a href="papeis.html"><button class="botao btn bg-black text-white">Ver mais</button></a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/santos.png" class="d-block w-100 mx-auto" alt="cálice">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Outros</h5>
+            <a href="outros.html"><button class="botao btn bg-black text-white">Ver mais</button></a>
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
@@ -154,6 +210,29 @@
         </button>
       </div>
     </div>
+    <h4>Por que escolher o Pergaminho Vanguarda?</h4> <br>
+    <div class="porque">
+      <ul>
+      <li><strong>Experiência e Profissionalismo:</strong>  Nossa equipe de especialistas possui amplo conhecimento em conservação e
+        restauro, garantindo que suas antiguidades sejam tratadas com o máximo cuidado e expertise.</li><br>
+
+      <li><strong>Replicas Autênticas:</strong> Nossas replicas são produzidas manualmente, utilizando técnicas tradicionais para criar
+        peças que reproduzem com fidelidade a história e a estética dos artefatos originais.</li><br>
+      <li><strong>Personalização:</strong> Entendemos que cada peça é única e valorizamos a individualidade. Trabalhamos em estreita
+        colaboração com você para atender às suas necessidades e garantir que o resultado final seja perfeito.</li><br>
+      <li><strong>Toque a História:</strong>  Permita-se explorar o passado através do tato. Nossas replicas oferecem a sensação de
+        autenticidade, permitindo que você mergulhe na história como nunca antes.</p>
+      </li>
+    </ul>
+  </div>
+    
+    <br>
+    <p>Não perca a oportunidade de preservar suas antiguidades e ter réplicas históricas de qualidade incomparável. Visite nosso site hoje mesmo e descubra como podemos ajudá-lo a manter a História viva!</p>
+
+
+
+
+
 
     <br><br><br><br>
     <i class="fa-solid fa-circle-arrow-up fa-2xl" onclick="topFunction()" id="myBtn"></i>
@@ -165,7 +244,7 @@
 
   <footer class="container-fluid bg-dark" id="color-link">
     <div class="row">
-      <div class="col p-4">
+      <div class="coluna-1 col p-4">
         <h6>INFORMAÇÕES</h6>
         <br>
         <p>Pergaminho Vanguarda</p>
@@ -175,7 +254,7 @@
 
       </div>
 
-      <div class="col  p-4">
+      <div class="coluna-2 col  p-4">
         <h6>EMPRESA</h6>
         <br>
         <a href="sobre.html" class="footer-links" id="color-link">Sobre Nós</a><br>
@@ -186,19 +265,19 @@
         <a href="contactos.html" class="footer-links" id="color-link">Contactos</a><br>
       </div>
 
-      <div class="col p-4">
+      <div class="coluna-3 col p-4">
         <h6>AJUDA</h6>
         <br>
         <a href="faqs.html" id="color-link">Perguntas Frequentes</a>
         <br><br><br>
         <h6>SIGA-NOS</h6>
         <br>
-        <a href="https://www.facebook.com/profile.php?id=100086106047742"><img src="img/facebook-logo.png" alt="facebook"
-            class="redes-sociais"></a>
-        <a href="https://www.instagram.com/pergaminho.vanguarda/"><img src="img/instagram.png" alt="instagram"
-            class="redes-sociais"></a>
-        <a href="https://www.linkedin.com/in/pergaminho-vanguarda-090bb226b/"><img src="img/linkedin.png" alt="linkedin"
-            class="redes-sociais"></a>
+        <a href="https://www.facebook.com/profile.php?id=100086106047742" target="_blank"><img
+            src="img/facebook-logo.png" alt="facebook" class="redes-sociais"></a>
+        <a href="https://www.instagram.com/pergaminho.vanguarda/" target="_blank"><img src="img/instagram.png"
+            alt="instagram" class="redes-sociais"></a>
+        <a href="https://www.linkedin.com/company/pergaminho-vanguarda/about/" target="_blank"><img
+            src="img/linkedin.png" alt="linkedin" class="redes-sociais"></a>
 
 
       </div>

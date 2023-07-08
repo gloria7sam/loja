@@ -5,11 +5,11 @@ body {
 
 /*Logo do Site*/
 .logo {
-  width: 150px;
+  width: 110px;
 }
 
 .div-logo {
-  width: 150px;
+  width: 140px;
 }
 
 .pedir-orcamento{
@@ -573,4 +573,50 @@ th {
 
 .detalhes-bules{
   margin-left: 2%;
+}
+
+#workshop2{
+  width: 500px;
+
+  
+}
+
+.inscricao{
+  margin: auto;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th{
+  background-color: #F5DEB3;
+}
+
+.porque{
+  text-align: justify;
+}
+
+.work{
+  margin-left: 20%;
+  text-align: center;
+  width:60%;
+}
+
+@media screen and (max-width:393px) {
+  #workshop2{
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .imagem {
+    max-width: 500px;
+  }
+}
+
+.info{
+  text-align: justify;
 }
