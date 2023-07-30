@@ -14,6 +14,21 @@ function scrollFunction() {
   }
 }
 
+let myLegendas = document.getElementById("caption");
+
+window.onscroll = function() {
+  scrollCaption()
+};
+
+function scrollCaption() {
+  if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
+    mybutton.style.display = "none";
+ 
+}
+
+}
+
+
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
   document.body.scrollTop = 0;

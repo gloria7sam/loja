@@ -5,11 +5,15 @@ body {
 
 /*Logo do Site*/
 .logo {
-  width: 110px;
+  width:80px;
 }
 
 .div-logo {
   width: 140px;
+}
+
+.faixa{
+  background-color: #F5DEB3;
 }
 
 .pedir-orcamento{
@@ -101,7 +105,7 @@ a {
 }
 
 .nav-link {
-  font-size: 20px;
+  font-size: 18px;
   text-decoration: none;
 }
 
@@ -402,6 +406,10 @@ input[type="radio"]:checked + label {
   margin-bottom: 10%;
 }
 
+.legendas{
+  display: block;
+}
+
 
 
 [class*="col-"] {
@@ -619,4 +627,78 @@ th{
 
 .info{
   text-align: justify;
+}
+
+
+
+
+.hr-with-text {
+  position: relative;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.hr-with-text::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #000;
+}
+
+.hr-with-text span {
+  background-color: #F5DEB3;
+  font-size: 30px;
+  padding: 0 20px;
+  position: relative;
+  top: 0em;
+}
+
+
+.legendas{
+  
+    position: fixed;
+    bottom: 40%;
+    right: 150px;
+    z-index: 99;
+  
+}
+
+/* .column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  box-sizing: border-box;
+
+} */
+
+/* Clearfix (clear floats) */
+/* .row::after {
+  content: "";
+  clear: both;
+  display: table;
+  padding-left: 30px;
+  width: 50%;
+} */
+
+
+.background-orcamento{
+  background-color: rgb(245, 222, 179);
+}
+
+
+
+
+
+div.scroll-container {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+div.scroll-container img {
+  padding: 10px;
 }
