@@ -68,7 +68,7 @@ body {
 }
 
 .content {
-  margin-left: 75px;
+
   font-size: 30px;
 }
 
@@ -131,7 +131,8 @@ a {
 .dropdown-item:hover{
   background-color: rgb(86, 86, 192);
   color: white;
-  width: 130px;
+  width: 128px;
+
 }
 
 
@@ -701,4 +702,28 @@ div.scroll-container {
 
 div.scroll-container img {
   padding: 10px;
+}
+
+
+/*Responsividade do ecrã para versão mobile*/
+
+@media (max-width: 300px) {
+
+  body{
+    overflow-x: hidden;
+  }
+
+ /*.faixa{
+  width: 405px;
+ }*/
+
+ .inicio{
+  margin-left:20px;
+  margin-top: -170px;
+  width: 90%;
+ }
+}
+
+.galeria{
+  width: 30%;
 }
