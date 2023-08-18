@@ -10,15 +10,15 @@
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7F4MY8K5Q5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7F4MY8K5Q5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-7F4MY8K5Q5');
-</script>
+    gtag('config', 'G-7F4MY8K5Q5');
+  </script>
 
   <!--FAVICON-->
   <link rel="shortcut icon" href="img/Imagem Redimensionada.png" type="image/x-icon">
@@ -39,9 +39,9 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg bg-body-secondary shadow">
+    <nav class="navbar navbar-expand-lg bg-body-secondary fixed-top shadow">
+      <div class="div-logo"><a href="index.html"><img src="img/logo-trans.png" alt="logo" class="logo"></a></div>
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img src="img/logo-trans.png" alt="logo" class="logo" style="width: 100px;"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -79,10 +79,9 @@
                   <li><a href="outros.html"><button class="dropdown-item" type="button">Outros</button></a></li>
                 </ul>
               </div>
-              
-            </li>
             <li class="nav-item">
               <a class="nav-link" href="eventos.html">EVENTOS</a>
+            </li>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contactos.html">CONTACTOS</a>
@@ -95,7 +94,6 @@
         </div>
       </div>
     </nav>
-
   </header>
 
   <div class="icon-bar">
@@ -110,142 +108,139 @@
 
 
     <div class="faixa shadow rounded-bottom-5">
-    <!-- <br><br><br><br><br><br><br> -->
-    <video src="video/inicio.mp4" type="video/mp4"  autoplay muted loop class="inicio pt-5"></video>
-    <br><br><br>
-<!-- <div class="faixa shadow"> -->
-  
-  <div class="hr-with-text">
-    <span>Novidades</span>
-  </div>
+      <br><br><br><br><br>
+      <video src="video/inicio.mp4" type="video/mp4" autoplay muted loop class="inicio pt-5"></video>
+      <br><br><br>
 
-    <br>
-    
-
-    <div class="row justify-content-center">
-
-      <img src="img/tiro_arco_2.jpeg" alt="Workshop de Pintura de Caixas Medievais" id="workshop2">
-    </div>
-    <br>
-    <div class="text-center">
-      <div class="work">
-
-        <div>
-         <h6>  "🏹 Workshop de Tiro ao Arco 🎯✨</h6>
-
-<p>Descubra a emocionante arte do tiro ao arco no nosso workshop especializado. Sob a orientação de instrutores experientes, você terá a oportunidade de aprimorar as suas habilidades de arqueiro(a) e vivenciar a precisão milenar desta fascinante prática.</p>
-
-<p>Não perca esta oportunidade de experimentar a sensação de soltar uma flecha rumo ao alvo. As vagas são limitadas, então garanta seu lugar agora mesmo!</p>
-
-<p><strong>💰Limite de Inscrição:</strong> 04 de agosto <br>
-    <strong>⚠️ Valor da Inscrição:</strong> 10€</p>
-
-<p>Preencha o formulário abaixo para se inscrever e garanta a sua participação nesse workshop repleto de adrenalina e concentração. Venha vivenciar uma experiência única de tiro ao arco no Pergaminho Vanguarda."</p>
-
-<p>📅 <strong>Data:</strong> 05/08/2023 <br>
-⏰ <strong>Hora:</strong> 15h-17h <br>
-📍 <strong>Local:</strong> Pergaminho Vanguarda, Rua Antero de Quental, 762, 4200-066</p>
-
-<br>
-
-        </div>
-     </div>
-    </div>
-    <div class="text-center">
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfYuQOdVZy7_v3nGqx3u_2uD5vIhuu1Ng83SYXzfzWlWMaS0w/viewform"
-        target="_blank">
-        <button class="inscricao btn bg-black text-white">Inscreva-se já!</button>
-      </a>
-    </div>
-    
-
-    <br><br>
-    <div class="hr-with-text">
-      <span>Destaques</span>
-    </div>
-    <br>
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="img/barco.jpg" class="d-block w-100" alt="evento">
-          <div class="carousel-caption d-none d-md-block">
-
-            <h5>Madeiras</h5>
-            <a href="madeiras.html"><button class="botao btn bg-black text-white">Ver mais</button></a>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="img/bules_polidos.jpg" class="d-block w-100 mx-auto" alt="bules">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Metais</h5>
-            <a href="metais.html"><button class="botao btn bg-black text-white">Ver mais</button></a>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="img/azulejos2.jpg" class="d-block w-100 mx-auto" alt="bules">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Cerâmicas</h5>
-            <a href="ceramica.html"><button class="botao btn bg-black text-white">Ver mais</button></a>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="img/album6.png" class="d-block w-100 mx-auto" alt="álbum">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Papéis</h5>
-            <a href="papeis.html"><button class="botao btn bg-black text-white">Ver mais</button></a>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="img/santos.png" class="d-block w-100 mx-auto" alt="cálice">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Outros</h5>
-            <a href="outros.html"><button class="botao btn bg-black text-white">Ver mais</button></a>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="false"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="false"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+      <div class="hr-with-text">
+        <span>Novidades</span>
       </div>
+      <br>
+      <div class="row justify-content-center">
+        <img src="img/workshop_aguarela_experimental.jpg" alt="Workshop de Aguarela Experimental" class="publicidade"
+          id="workshop2">
+      </div>
+      <br>
+      <div class="text-center">
+        <div class="work">
+
+          <div>
+            <h6> 🎨 Workshop de Aguarela Experimental 🌈</h6>
+            <p><strong>💰Limite de Inscrição:</strong> 01 de setembro <br>
+               <strong>⚠️ Valor da Inscrição:</strong> 20€
+            </p>
+
+            <p>🔸 Explore a arte da aguarela e solte a sua criatividade. <br>
+              🔸 Formadores experientes irão guiá-lo através das técnicas e cores. <br>
+              🔸 Para iniciantes e entusiastas da arte.
+            </p>
+
+            <p>📅 <strong>Data:</strong> 02/09/2023 <br>
+              ⏰ <strong>Hora:</strong> 15h-17h30 <br>
+              📍 <strong>Local:</strong> Pergaminho Vanguarda, Rua Antero de Quental, 762, 4200-066</p>    
+              
+              <p>Junte-se a nós nesse workshop de cores e imaginação. Reserve já o seu lugar e mergulhe na magia da aguarela no Pergaminho Vanguarda.</p>
+
+            <br>
+
+          </div>
+        </div>
+      </div> 
+      <div class="text-center">
+        <a href="https://docs.google.com/forms/d/1FNtsYsnMOKSX8ndOM3sNTyl_O-DK2Mj3fwSYppnpdbI/edit"
+          target="_blank">
+          <button class="inscricao btn bg-black text-white">Inscreva-se já!</button>
+        </a>
+      </div>
+      <br>
+      <br>
+      <div class="hr-with-text">
+        <span>Destaques</span>
+      </div>
+      <br>
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/barco.jpg" class="d-block w-100" alt="evento">
+            <div class="carousel-caption d-none d-md-block">
+
+              <h5>Madeiras</h5>
+              <a href="madeiras.html"><button class="botao btn bg-black text-white">Ver mais</button></a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/bules_polidos.jpg" class="d-block w-100 mx-auto" alt="bules">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Metais</h5>
+              <a href="metais.html"><button class="botao btn bg-black text-white">Ver mais</button></a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/azulejos2.jpg" class="d-block w-100 mx-auto" alt="bules">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Cerâmicas</h5>
+              <a href="ceramica.html"><button class="botao btn bg-black text-white">Ver mais</button></a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/album6.png" class="d-block w-100 mx-auto" alt="álbum">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Papéis</h5>
+              <a href="papeis.html"><button class="botao btn bg-black text-white">Ver mais</button></a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/santos.png" class="d-block w-100 mx-auto" alt="cálice">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Outros</h5>
+              <a href="outros.html"><button class="botao btn bg-black text-white">Ver mais</button></a>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="false"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <h4 class="p-3">Por que escolher o Pergaminho Vanguarda?</h4> <br>
+      <div class="porque p-3">
+        <ul>
+          <li><strong>Experiência e Profissionalismo:</strong> Nossa equipe de especialistas possui amplo conhecimento
+            em conservação e
+            restauro, garantindo que suas antiguidades sejam tratadas com o máximo cuidado e expertise.</li><br>
+
+          <li><strong>Replicas Autênticas:</strong> Nossas replicas são produzidas manualmente, utilizando técnicas
+            tradicionais para criar
+            peças que reproduzem com fidelidade a história e a estética dos artefatos originais.</li><br>
+          <li><strong>Personalização:</strong> Entendemos que cada peça é única e valorizamos a individualidade.
+            Trabalhamos em estreita
+            colaboração com você para atender às suas necessidades e garantir que o resultado final seja perfeito.</li>
+          <br>
+          <li><strong>Toque a História:</strong> Permita-se explorar o passado através do tato. Nossas replicas oferecem
+            a sensação de
+            autenticidade, permitindo que você mergulhe na história como nunca antes.</p>
+          </li>
+        </ul>
+      </div>
+
+      <br>
+      <p class="p-3">Não perca a oportunidade de preservar suas antiguidades e ter réplicas históricas de qualidade
+        incomparável. Visite nosso site hoje mesmo e descubra como podemos ajudá-lo a manter a História viva!</p>
+
+      <br>
     </div>
-    <h4 class="p-3">Por que escolher o Pergaminho Vanguarda?</h4> <br>
-    <div class="porque p-3">
-      <ul>
-      <li><strong>Experiência e Profissionalismo:</strong>  Nossa equipe de especialistas possui amplo conhecimento em conservação e
-        restauro, garantindo que suas antiguidades sejam tratadas com o máximo cuidado e expertise.</li><br>
 
-      <li><strong>Replicas Autênticas:</strong> Nossas replicas são produzidas manualmente, utilizando técnicas tradicionais para criar
-        peças que reproduzem com fidelidade a história e a estética dos artefatos originais.</li><br>
-      <li><strong>Personalização:</strong> Entendemos que cada peça é única e valorizamos a individualidade. Trabalhamos em estreita
-        colaboração com você para atender às suas necessidades e garantir que o resultado final seja perfeito.</li><br>
-      <li><strong>Toque a História:</strong>  Permita-se explorar o passado através do tato. Nossas replicas oferecem a sensação de
-        autenticidade, permitindo que você mergulhe na história como nunca antes.</p>
-      </li>
-    </ul>
-  </div>
-    
-    <br>
-    <p class="p-3">Não perca a oportunidade de preservar suas antiguidades e ter réplicas históricas de qualidade incomparável. Visite nosso site hoje mesmo e descubra como podemos ajudá-lo a manter a História viva!</p>
-
-<br>
-</div>
-
-</div>
+    </div>
 
     <br><br><br><br>
     <i class="fa-solid fa-circle-arrow-up fa-2xl" onclick="topFunction()" id="myBtn"></i>
-
-
   </main>
-
-
 
   <footer class="container-fluid bg-dark" id="color-link">
     <div class="row">
