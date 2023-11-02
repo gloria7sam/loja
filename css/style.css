@@ -1,6 +1,6 @@
 body {
   background-color: rgb(252, 239, 216);
-  overflow-x: hidden;
+/*   overflow-x: hidden; */
 } 
 
 /*Logo do Site*/
@@ -68,7 +68,6 @@ body {
 }
 
 .content {
-
   font-size: 30px;
 }
 
@@ -79,10 +78,10 @@ body {
   list-style-type: none;
   padding: 30px;
   text-align: center;
+  
 }
 
 .nav li {
-  display: inline-block;
   font-size: 20px;
   padding: 20px;
 }
@@ -114,26 +113,21 @@ a {
 }
 
 /*Dropdown*/
-.dropdown-menu {
-  border-radius: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
 .dropdown-menu2:hover {
   display: block;
-}
+  
+} 
 
-.dropdown:hover .dropdown-menu {
+ .dropdown:hover .dropdown-menu {
   display: block;
-}
+  
+} 
 
-.dropdown-item:hover{
+ .dropdown-item:hover {
   background-color: rgb(86, 86, 192);
   color: white;
-  width: 128px;
 
-}
+} 
 
 
 .imagem {
@@ -153,17 +147,17 @@ a {
 }
 
 /*Carousel*/
-.carousel-inner {
-  height: 500px;
-  width: 400px;
+.carousel-inner{
+  height: 4%;
+  width: 300px;
   margin: 0 auto;
 }
 
-.carousel-item {
+.carousel-item{
   object-fit: scale-down;
 }
 
-.botao {
+.botao{
   border-radius: 0;
 }
 
@@ -172,7 +166,7 @@ a {
   gap: 7px;
 }
 
-#sobre-imagem {
+#sobre-imagem{
   border-radius: 10px; 
   gap: 10%;
   height: 250px;
@@ -324,16 +318,15 @@ input[type="radio"]:checked + label {
 #color-link {
   color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-
 }
 
 
-*,
+/* *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
-
+ */
 .column {
   float: left;
   width: 33.3%;
@@ -346,9 +339,9 @@ input[type="radio"]:checked + label {
   margin: 8px;
 }
 
-.container {
+/* .container {
   padding: 0 16px;
-}
+} */
 
 .container::after,
 .row::after {
@@ -577,10 +570,8 @@ th {
   margin-left: 2%;
 }
 
-#workshop2{
-  width: 500px;
-
-  
+ #workshop2{
+  width: 500px; 
 }
 
 .inscricao{
@@ -606,12 +597,6 @@ th{
   width:60%;
 }
 
-@media screen and (max-width:393px) {
-  #workshop2{
-    max-width: 100%;
-    height: auto;
-  }
-}
 
 @media (max-width: 767px) {
   .imagem {
@@ -622,9 +607,6 @@ th{
 .info{
   text-align: justify;
 }
-
-
-
 
 .hr-with-text {
   position: relative;
@@ -682,10 +664,6 @@ th{
   background-color: rgb(245, 222, 179);
 }
 
-
-
-
-
 div.scroll-container {
   background-color: #333;
   overflow: auto;
@@ -698,6 +676,7 @@ div.scroll-container img {
 }
 
 
+
 /*Responsividade do ecrã para versão mobile*/
 
 @media screen and (max-width: 300px) {
@@ -706,17 +685,17 @@ div.scroll-container img {
     overflow-x: hidden;
   }
 
- /*.faixa{
-  width: 405px;
- }*/
-
  .inicio{
   margin-left:20px;
   margin-top: -170px;
   width: 90%;
  }
-}
 
+ #workshop2{
+  width: 50px;
+ }
+
+}
 
 @media screen and (max-width: 768px) {
   .column {
@@ -748,4 +727,18 @@ gap: 2vw;
 
 .colored-link{
   color: darkgoldenrod ;
+}
+
+.detalhes-tratado{
+  margin-left: -105px;
+}
+
+.about-images{
+  height: 800px;
+  width: 400px;
+}
+
+#carousel-sobre{
+  width: 100%;
+  margin-left: 12%;
 }
