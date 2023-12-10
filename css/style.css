@@ -403,13 +403,6 @@ input[type="radio"]:checked + label {
   width: 100%;
 }
 
-@media only screen and (max-width: 500px) {
-  .icon-bar{
-    display: none;
-  }
-
-}
-
 
 #pnome{
  
@@ -587,6 +580,14 @@ th{
   background-color: #F5DEB3;
 }
 
+.about-text{
+  text-align: justify;
+}
+
+.evento-text{
+  text-align: justify;
+}
+
 .porque{
   text-align: justify;
 }
@@ -597,12 +598,6 @@ th{
   width:60%;
 }
 
-
-@media (max-width: 767px) {
-  .imagem {
-    max-width: 500px;
-  }
-}
 
 .info{
   text-align: justify;
@@ -679,6 +674,66 @@ div.scroll-container img {
 
 /*Responsividade do ecrã para versão mobile*/
 
+
+
+@media screen and (max-width: 768px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+
+  .inicio{
+    margin-left: 5%;
+    margin-top: -55%;
+    width:90%;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .imagem {
+    max-width: 500px;
+  }
+
+  #sobre-imagem{
+    border-radius: 10px; 
+    gap: 10%;
+    height: 110px;
+    width: 110px;
+  }
+ 
+
+}
+
+
+@media only screen and (max-width: 1257px) {
+  .icon-bar{
+    display: none;
+  }
+
+  #nome{
+    width: 100%;
+  }
+
+  #assunto{
+    width: 100%;
+  }
+
+  #email{
+    width: 100%;
+  }
+
+  #textarea{
+    width: 100%
+  }
+
+  .submeter-orcamento{
+    width: 60%;
+  }
+
+}
+
+
 @media screen and (max-width: 300px) {
 
   body{
@@ -695,19 +750,27 @@ div.scroll-container img {
   width: 50px;
  }
 
+ #nome{
+  width: 100%;
 }
 
-@media screen and (max-width: 768px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
+#assunto{
+  width: 100%;
+}
 
-  .inicio{
-    margin-left: 5%;
-    margin-top: -55%;
-    width:90%;
-  }
+#email{
+  width: 100%;
+}
+
+#textarea{
+  width: 100%
+}
+
+.submeter-orcamento{
+  width: 60%;
+}
+
+
 
 }
 
